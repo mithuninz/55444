@@ -4,7 +4,7 @@ $song = $_GET["message"];
 $song = str_replace("'", "", $song);
 $number = $_GET["mobile"];
 if (!empty($song)) {
-    include 'configdbx.php';
+    include 'conn_db.php';
     $search = urlencode($song);
     $url = "http://gdata.youtube.com/feeds/api/videos?q=$search";
     $contents = file_get_contents($url);

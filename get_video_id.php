@@ -1,6 +1,6 @@
 <?php
 
-include 'configdbx.php';
+include 'conn_db.php';
 $query = "select * from youtube where status=0 order by `timestamp` desc limit 1";
 $result = mysql_query($query);
 if (mysql_num_rows($result)) {

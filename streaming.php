@@ -5,23 +5,11 @@
         <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js" type="text/javascript"></script>
         <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
-        <!--        <link rel="stylesheet" href="http://www.slickchixradio.com/style.css" type="text/css" media="screen" />
-        
-                <style type="text/css">
-                    .style1 {
-                        text-align: center;
-                    }
-                </style>-->
-
     </head>
     <body>
         <script language=JavaScript>
             
             <!--
-
-            //Disable right mouse click Script
-            //By Maximus (maximus@nsimail.com) w/ mods by DynamicDrive
-            //For full source code, visit http://www.dynamicdrive.com
 
             var message="Function Disabled!";
 
@@ -54,8 +42,7 @@
 
             // --> 
         </script>	   
-        <!--        <div id="header" class="style1" style="left: 0px; top: 0px; height: 258px">-->
-        <div>
+               <div>
             <center>
                 <h3>
                     <div id="np" style=" font-family: Georgia;"></div>
@@ -141,7 +128,7 @@
                     }
                 
                     function myTimer(){
-                        $.get("song_select.php",  null, function (data) {                        
+                        $.get("get_video_id.php",  null, function (data) {                        
                             if(data != 'NULL'){
                                 var video = eval ('(' + data + ')');
 //                                ytplayer_playlist.push( video.id ); 
