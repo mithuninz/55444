@@ -6,7 +6,7 @@
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js" type="text/javascript"></script>
         <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
     </head>
-    <body>
+    <body bgcolor="#e9e9e9">
         <script language=JavaScript>
             
             <!--
@@ -42,7 +42,7 @@
 
             // --> 
         </script>	   
-               <div>
+        <div>
             <center>
                 <h3>
                     <div id="np" style=" font-family: Georgia;"></div>
@@ -131,9 +131,9 @@
                         $.get("get_video_id.php",  null, function (data) {                        
                             if(data != 'NULL'){
                                 var video = eval ('(' + data + ')');
-//                                ytplayer_playlist.push( video.id ); 
+                                //                                ytplayer_playlist.push( video.id ); 
                                 ytplayer_play(video.id);
-//                                ytplayer_playitem++;
+                                //                                ytplayer_playitem++;
                                 $("#np").text("#NowPlaying: " + video.q);
                                 intr = 30000;
                             }else{
@@ -197,7 +197,8 @@
                 </script>
 
                 <div style="font-family: Tahoma">Send #youtube &lt;Song Name&gt; to 55444 to play your favorite songs.</div>
-
+                <br/>
+                <div style="font-family: Tahoma; font-size:small; width: 1200px;"><br/>Powered by <a style="text-decoration: none;" target="_blank" href="http://www.55444.in"><font color="red">55</font><font color="#FF8000">444</font></a><br/><br/></div>
             </center>
         </div>
     </body>
